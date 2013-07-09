@@ -60,6 +60,7 @@ default is what most users will do most of the time which is create a standalone
     "recipe[chef-mushroomobserver]"
   ]
 }
+```
 
 #### chef-mushroomobserver::standalone
 
