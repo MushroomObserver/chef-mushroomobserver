@@ -6,3 +6,4 @@
 # License: MIT
 #
 
+include_recipe 'chef-mushroomobserver::standalone'
