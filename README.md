@@ -27,20 +27,24 @@ e.g.
     <th>Default</th>
   </tr>
   <tr>
-    <td><tt>['chef-mushroomobserver']['rails_environment']</tt></td>
+    <td><tt>['rails_environment']</tt></td>
     <td>'test', 'development' or 'production'</td>
     <td>Indicates which database should be created.</td>
     <td><tt>development</tt></td>
   </tr>
   <tr>
-    <td><tt>['chef-mushroomobserver']['mo_db_pass']</tt></td>
+    <td><tt>['mo_db_pass']</tt></td>
     <td>string</td>
     <td>Password for the 'mo' database user.</td>
     <td><tt>secure_password</tt></td>
   </tr>
+  <tr>
+    <td><tt>['repo_path']</tt></td>
+    <td>string</td>
+    <td>Path for the local mushroom repository.</td>
+    <td></td>
+  </tr>
 </table>
-
-node['chef-mushroomobserver']['repo_path']
 
 Usage
 -----
@@ -68,6 +72,7 @@ standalone recipe loads the test database
     "recipe[chef-mushroomobserver::standalone]"
   ]
 }
+```
 
 #### chef-mushroomobserver::production
 
@@ -80,6 +85,7 @@ production recipe gets and loads the production database and does all the other 
     "recipe[chef-mushroomobserver::production]"
   ]
 }
+```
 
 #### chef-mushroomobserver::dump_production
 
@@ -93,6 +99,7 @@ Requires ssh access to the production machine.
     "recipe[chef-mushroomobserver::dump_production]"
   ]
 }
+```
 
 #### chef-mushroomobserver::create_init
 
@@ -107,6 +114,7 @@ production machine.
     "recipe[chef-mushroomobserver::dump_production]"
   ]
 }
+```
 
 #### chef-mushroomobserver::db
 
