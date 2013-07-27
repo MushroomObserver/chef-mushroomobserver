@@ -20,7 +20,14 @@ include_recipe 'chef-mushroomobserver::db'
 
 include_recipe 'chef-mushroomobserver::app'
 
-mo_init_path = files("init.sql")
+mo_init_path = "/tmp/init.sql"
+
+cookbook_file mo_init_path do
+  backup false
+  path "/init.sql"
+  action :create
+end
+
 execute "mysql-init" do
   command "/usr/bin/mysql -u mo #{node['chef-mushroomobserver']['mo_db_pass']} < #{mo_init_path}"
 end
