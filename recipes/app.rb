@@ -14,8 +14,8 @@ include_recipe 'build-essential' # Need this to be able to build MO tools (or sh
 
 # Installs appropriate Ruby and gems (rails 2.1.1, mysql, mysql2 0.2.18, test-unit, RedCloth, sparql)
 
-include_recipe 'rvm' # Prolly want the other RVM, but need to figure that out...
-include_recipe 'rvm::ruby_193'
+include_recipe 'rvm'
+include_recipe 'rvm::system'
 
 gem_package 'rails:2.1.1' # How do you specify version number?
 gem_package 'mysql'

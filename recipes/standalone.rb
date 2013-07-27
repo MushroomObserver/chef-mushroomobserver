@@ -11,10 +11,10 @@
 # [Where should the stuff for making the source code available between Vagrant and host go?  Vagrantfile?]
 
 # Is this a good/reasonable way to run this for 'test' and for 'development'?
-node['chef-mushroomobserver']['rails_environment'] = 'test'
+node.set['chef-mushroomobserver']['rails_environment'] = 'test'
 include_recipe 'chef-mushroomobserver::db'
 
-node['chef-mushroomobserver']['rails_environment'] = 'development'
+node.set['chef-mushroomobserver']['rails_environment'] = 'development'
 include_recipe 'chef-mushroomobserver::db'
 
 
