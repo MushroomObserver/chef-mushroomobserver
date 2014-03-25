@@ -5,9 +5,6 @@ Chef cookbook for creating Mushroom Observer (http://mushroomobserver.org) syste
 
 Requirements
 ------------
-No requirements so far, but I hope to have some someday.
-
-Testing
 
 e.g.
 #### packages - Do packages mean other cookbooks or something else?  For now I'll list the cookbooks
