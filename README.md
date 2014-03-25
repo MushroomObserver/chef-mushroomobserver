@@ -14,7 +14,6 @@ e.g.
 
 Attributes
 ----------
-No attributes yet, but I hope to have some someday.
 
 e.g.
 #### chef-mushroomobserver::default
