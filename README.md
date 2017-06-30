@@ -134,7 +134,8 @@ Contributing
 5. Run the tests, ensuring they all pass
 6. Submit a Pull Request using Github
 
-License and Authors
+Copright, License, and Authors
 -------------------
+Copyright Notice: Copyright (c) © 2006-2017 Mushroom Observer, Inc.
 Authors: Nathan Wilson
 License: MIT (like all things Mushroom Observer)
